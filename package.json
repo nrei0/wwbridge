@@ -1,0 +1,22 @@
+{
+  "name": "wwbridge",
+  "version": "0.1.0",
+  "description": "Bridge for bi-directional communication between JS and mobile",
+  "main": "src/index.js",
+  "scripts": {
+    "release-patch": "npm version patch -m 'chore(*): patch version'",
+    "release-minor": "npm version minor -m 'chore(*): minor version'",
+    "release-major": "npm version major -m 'chore(*): major version'",
+    "version": "git fetch --tags",
+    "postversion": "git push origin master && git push --tags && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:AndyTyurin/wwbridge.git"
+  },
+  "author": "Andy Tyurin <andy.tyurin@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
